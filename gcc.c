@@ -45,17 +45,22 @@ int main(int argc, char** argv) {
     }
 
     /* GCC Version. */
-    version = mkString("%d.%d.%d", __GNUC__, __GNUC_MINOR__, __GNUC_PATCHLEVEL__);
+    version = mkString("%d.%d.%d", __X_GNUC__, __X_GNUC_MINOR__, __X_GNUC_PATCHLEVEL__);
 
     /* Without these -B args, gcc will still work. However, if you
        have a mingw installation in c:/mingw then it will use files
        from that in preference to the in-tree files. */
     preArgv[0] = mkString("-B%s", binDir);
     preArgv[1] = mkString("-B%s/../lib", binDir);
-#ifdef __MINGW64__
+
+#ifdef __X_MINGW32__
+    base = mkString("mingw32");
+#else
+#ifdef __X_MINGW64__
     base = mkString("x86_64-w64-mingw32");
 #else
     base = mkString("i686-w64-mingw32");
+#endif
 #endif
 
     preArgv[2] = mkString("-B%s/../lib/gcc/%s/%s"    , binDir, base, version);
@@ -63,4 +68,3 @@ int main(int argc, char** argv) {
 
     run(exePath, 4, preArgv, argc - 1, argv + 1);
 }
-
