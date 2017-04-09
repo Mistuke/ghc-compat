@@ -20,6 +20,12 @@ To compile the shim yourself use:
 $ make all
 ```
 
+You must also insure you have both a `64 bit` and `32 bit` version of GCC installed:
+
+```sh
+$ pacman -Sy mingw-w64-i686-gcc mingw-w64-x86_64-gcc
+```
+
 For the related GHC issue see the GHC issue tracker [1].
 
 **Recent GHC/GCC Deployment History**
