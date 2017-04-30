@@ -30,19 +30,24 @@ For the related GHC issue see the GHC issue tracker [1].
 | 8.2.1  | MinGW-w64  | 6.2.0  | 2.27     | MinGW-w64     | 6.2.0   | 2.27     |
 | 8.0.1  | MinGW-w64  | 5.2.0  | 2.25     | MinGW-w64     | 5.2.0   | 2.25     |
 | 7.10.3 | MinGW-w64  | 5.2.0  | 2.25     | MinGW-w64     | 5.2.0   | 2.25     |
-| 7.10.2 | MinGW      | 4.5.2  | 2.20     | MinGW-w64     | 4.6.3   | 2.20     |
-| 7.10.1 | MinGW      | 4.5.2  | 2.20     | MinGW-w64     | 4.6.3   | 2.20     |
-| 7.8.3  | MinGW      | 4.5.2  | 2.20     | MinGW-w64     | 4.6.3   | 2.20     |
-| 7.8.2  | MinGW      | 4.5.2  | 2.20     | MinGW-w64     | 4.6.3   | 2.20     |
-| 7.8.1  | MinGW      | 4.5.2  | 2.20     | MinGW-w64     | 4.6.3   | 2.20     |
-| 7.6.3  | MinGW      | 4.5.2  | 2.20     | MinGW-w64     | 4.6.3   | 2.20     |
-| 7.6.2  | MinGW      | 4.5.2  | 2.20     | MinGW-w64     | 4.6.3   | 2.20     |
-| 7.6.1  | MinGW      | 4.5.2  | 2.20     | MinGW-w64     | 4.6.3   | 2.20     |
+| 7.10.2 | MinGW      | 4.5.2  | 2.20     | ~~MinGW-w64~~ | 4.6.3   | 2.20     |
+| 7.10.1 | MinGW      | 4.5.2  | 2.20     | ~~MinGW-w64~~ | 4.6.3   | 2.20     |
+| 7.8.3  | MinGW      | 4.5.2  | 2.20     | ~~MinGW-w64~~ | 4.6.3   | 2.20     |
+| 7.8.2  | MinGW      | 4.5.2  | 2.20     | ~~MinGW-w64~~ | 4.6.3   | 2.20     |
+| 7.8.1  | MinGW      | 4.5.2  | 2.20     | ~~MinGW-w64~~ | 4.6.3   | 2.20     |
+| 7.6.3  | MinGW      | 4.5.2  | 2.20     | ~~MinGW-w64~~ | 4.6.3   | 2.20     |
+| 7.6.2  | MinGW      | 4.5.2  | 2.20     | ~~MinGW-w64~~ | 4.6.3   | 2.20     |
+| 7.6.1  | MinGW      | 4.5.2  | 2.20     | ~~MinGW-w64~~ | 4.6.3   | 2.20     |
 | 7.4.2  | MinGW      | 4.5.2  | 2.20     | -             | -       | -        |
 | 7.4.1  | MinGW      | 4.5.2  | 2.20     | -             | -       | -        |
 | 7.2.2  | MinGW      | 4.5.2  | 2.20     | -             | -       | -        |
 | 7.2.1  | MinGW      | 4.5.2  | 2.20     | -             | -       | -        |
 
 - Your friendly neighbourhood GHC Windows maintainer.
+
+~~~
+NOTE: Prior to GHC 7.10.3, the x86_64 bindist do not seem to have been using the wrapper.
+      The code was built just not included. So they do not require patching.
+~~~
 
 [1] https://ghc.haskell.org/trac/ghc/ticket/13411
