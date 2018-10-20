@@ -26,6 +26,11 @@ For the related GHC issue see the GHC issue tracker [1].
 
 | GHC    | Distro x86 | GCC    | Binutils | Distro x86_64 | GCC     | Binutils |
 | ------ | ------     | ------ | ------   | ------        |  ------ | ------   |
+| 8.6.2  | MinGW-w64  | 7.2.0  | 2.29     | MinGW-w64     | 7.2.0   | 2.29     |
+| 8.6.1  | MinGW-w64  | 7.2.0  | 2.29     | MinGW-w64     | 7.2.0   | 2.29     |
+| 8.4.4  | MinGW-w64  | 7.2.0  | 2.29     | MinGW-w64     | 7.2.0   | 2.29     |
+| 8.4.3  | MinGW-w64  | 7.2.0  | 2.29     | MinGW-w64     | 7.2.0   | 2.29     |
+| 8.4.2  | MinGW-w64  | 7.2.0  | 2.29     | MinGW-w64     | 7.2.0   | 2.29     |
 | 8.4.1  | MinGW-w64  | 7.2.0  | 2.29     | MinGW-w64     | 7.2.0   | 2.29     |
 | 8.2.1  | MinGW-w64  | 6.2.0  | 2.27     | MinGW-w64     | 6.2.0   | 2.27     |
 | 8.0.1  | MinGW-w64  | 5.2.0  | 2.25     | MinGW-w64     | 5.2.0   | 2.25     |
